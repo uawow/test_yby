@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+#wrap{position:relative; top:0; left:0; right:0; width:100%; height:100%; overflow-y:auto;}
+/*---------------------- 메인헤더 ----------------------*/
+.ht_146{height:146px;}
+.bg_color{
+        background: rgb(255,255,255);
+        background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,229,216,1) 100%);
+        background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(255,229,216,1) 100%);
+        background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(255,229,216,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffe5d8',GradientType=1 );
+}
+#header{display:block; top:0; left:0; width:100%;}
+#header .img_bride{position:absolute; top:0; left:0; width:100%; height:100%; background:url("http://image.yeoboya.com/imgs/new_wedding/index/img_bride.png") no-repeat center top; background-size:400px 146px;}
+#header .img_flower{position:absolute; top:32px; left:-148px; width:100%; height:114px; background:url("http://image.yeoboya.com/imgs/new_wedding/index/img_flower.png")no-repeat center bottom; background-size:65px 114px;}
+#header .img_logo{display:block; position:relative; top:25px; width:117px; height:60px; margin:0 auto;}
+#header .hd_txt{position:relative; font-size:16px; font-weight:bold; color:#474747; text-align:center; top:41px; letter-spacing:-0.5px;}
+
+@media(max-width:359px) {
+    #header .img_flower{left:-138px;}
+}
+
+/*---------------------- 메뉴버튼 ----------------------*/
+.menu_wrap{display:block; position:relative; width:100%; height:85px; top:0; left:0;}
+.menu_wrap .btn_st{float:left; width:33.3333%; height:100%; border-right:1px solid #fff; box-sizing:border-box; text-align:center; font-size:15px; font-weight:600; color:#fff;}
+.menu_wrap .btn_st:last-of-type{border-right:none;}
+.menu_wrap .btn_st a{display:block; width:100%; height:100%; padding-top:53px; box-sizing:border-box;}
+.menu_wrap .pink{background-color:#ff7797;}
+.menu_wrap .pink a{background: url("http://image.yeoboya.com/imgs/new_wedding/index/ico_wdcar.png") center 12px no-repeat; background-size:33px 37px;}
+.menu_wrap .bluegreen {background-color:#55cccc;} 
+.menu_wrap .bluegreen a{background:url("http://image.yeoboya.com/imgs/new_wedding/index/ico_dress.png") center 12px no-repeat; background-size:28px 36px;}
+.menu_wrap .purple {background-color:#a06dda;}
+.menu_wrap .purple a{background: url("http://image.yeoboya.com/imgs/new_wedding/index/ico_bouquet.png") center 12px no-repeat; background-size:25px 37px;}
+
+/*---------------------- 컨텐츠영역 ----------------------*/
+.contents_wrap{display:block; position:relative; width:100%; height:auto; background-color:#ececec;}
+.contents_wrap .bg_box{display:block; position:relative; width:100%; height:auto; background-color:#fff; border-bottom:1px solid #d9d9d9; padding:8px 12px 12px 12px; margin-bottom:7px; box-sizing:border-box;}
+.contents_wrap .bg_box p{font-size:15px; color:#272727; font-weight:600;}
+.contents_wrap .bg_box p span{color:#a06dda;}
+.contents_wrap .add_all{display:block; position:absolute; top:0; right:0; font-size:14px; font-weight:600; color:#767676; width:74px; height:38px; background:url("http://image.yeoboya.com/imgs/new_wedding/index/arrow_right.png") 58px 16px no-repeat; background-size:6px 10px; line-height:41px; z-index:100;}
+.contents_wrap .add_all a{display:block; width:100%; height:100%;}
+.contents_wrap .add_all a:active{background-color:rgba(0,0,0,0.03);}
+
+/*NEW 내정보*/
+.contents_wrap .my_info .info_box{margin:5px 0 2px 0; display:block; position:relative; width:100%; height:62px;}
+.contents_wrap .my_info .info_box .info_li{float:left; width:33.3333%; height:62px; text-align:center;}
+.contents_wrap .my_info .info_box .info_li a{display:block; width:100%; height:100%;}
+.contents_wrap .my_info .info_box .info_li a:active{background-color:rgba(0,0,0,0.02);}
+.contents_wrap .my_info .info_box .info_li .badge_num{color:#ff3371; font-size:23px; font-weight:600; line-height:34px;}
+.contents_wrap .my_info .info_box .info_li .num_none{color:#a2a2a2;}
+.contents_wrap .my_info .info_box .info_li .info_txt{color:#565656; font-size:14px; border-right:1px solid #d2d2d2; box-sizing:border-box;}
+.contents_wrap .my_info .info_box .info_li:last-of-type .info_txt{border-right:none;}
+.contents_wrap .my_info .btn_mypf{display:block; position:relative; width:100%; height:39px; border:1px solid #e47596; color:#f04679; font-size:14px; font-weight:600; line-height:37px; box-sizing:border-box; text-align:center;}
+.contents_wrap .my_info .btn_mypf a{display:block; width:100%; height:100%;}
+.contents_wrap .my_info .btn_mypf a:active{background-color:#f04679; border:none; color:#fff;}
+.contents_wrap .my_info .pf_none{display:block; position:relative; width:142px; height:48px; margin:6px auto 8px auto; background:url("http://image.yeoboya.com/imgs/new_wedding/index/pf_none.png") center center no-repeat; background-size:142px 48px;}
+
+/*신규가입회원*/
+.contents_wrap .new_member{padding:0px;}
+.contents_wrap .new_member .mem_tit{padding:0 12px 0 12px;}
+.contents_wrap .new_member .mem_tit .tit_touch{display:inline-block; width:auto; height:100%; padding:10px 0 6px 0; box-sizing:border-box; color:#272727; cursor:pointer;}
+.contents_wrap .new_member .new_mem_none{display:block; margin:12px auto 20px auto;}
+.contents_wrap .new_member .menber_scroll{width:100%; height:auto; overflow-x:auto;}
+.contents_wrap .new_member ul{display:block; position:relative; height:112px; margin:8px 0 0 0; padding:0 6px 12px 6px;}
+.contents_wrap .new_member ul:after{content:""; display:block; clear:both;}
+.contents_wrap .new_member ul li{float:left; width:84px;; height:auto; text-align:center;}
+.contents_wrap .new_member ul li img{border-radius:100%; z-index:auto; object-fit:cover; border:1px solid #dfdfdf;}
+.contents_wrap .new_member ul li a{position:relative; display:block; width:100%; height:100%;}
+.contents_wrap .new_member ul li a:active{background-color:rgba(0,0,0,0.02);}
+.contents_wrap .new_member ul li .avata{border:1px solid #dfdfdf; box-sizing:border-box;}
+.contents_wrap .new_member ul li .badge{display:block; position:absolute; top:58px; width:100%; height:16px; margin:0 auto;}
+.contents_wrap .new_member ul li .nw_badge{ background:url("http://image.yeoboya.com/imgs/new_wedding/index/badge_01.png")center center no-repeat; background-size:31px 16px;}
+.contents_wrap .new_member ul li .rw_badge{background:url("http://image.yeoboya.com/imgs/new_wedding/index/badge_02.png")center center no-repeat; background-size:31px 16px;}
+.contents_wrap .new_member ul li .nickname{font-size:14px; height:17px; line-height:17px; margin-top:4px; overflow:hidden;}
+.contents_wrap .new_member ul li .woman{color:#f4716a;}
+.contents_wrap .new_member ul li .man{color:#2891b6;}
+.contents_wrap .new_member ul li .pf_detail{font-size:13px; font-weight:400;  color:#6e6e6e;}
+.contents_wrap .new_member .new_switch{position:absolute; top:0px; left:92px; width:120px; height:auto;}
+.contents_wrap .new_member .new_switch:after{content:""; display:block; clear:both;}
+.contents_wrap .new_member .new_switch .switch{position:relative; width:50%; height:auto; box-sizing:border-box; float:left; cursor:pointer;}
+.contents_wrap .new_member .new_switch .switch:first-of-type{padding:7px 0 7px 10px;}
+.contents_wrap .new_member .new_switch .switch:last-of-type{padding:7px 10px 7px 0;}
+.contents_wrap .new_member .new_switch .switch span{display:block; width:100%; height:25px; line-height:25px; background-color:#fff; color:#aaa; font-size:15px; text-align:center;}
+.contents_wrap .new_member .new_switch .switch:first-of-type span{border-width:1px 0 1px 1px; border-style:solid; border-color:#eee;}
+.contents_wrap .new_member .new_switch .switch:last-of-type span{border-width:1px 1px 1px 0; border-style:solid; border-color:#eee;}
+.contents_wrap .new_member .new_switch .on .woman{border-color:#f4716a!important; background-color:#f4716a; color:#fff; font-weight:600;}
+.contents_wrap .new_member .new_switch .on .man{border-color:#2891b6!important; background-color:#2891b6; color:#fff; font-weight:600;}
+
+/*탭박스*/
+.contents_wrap .tab_box{display:block; position:relative; top:0; left:0; width:100%; height:auto; padding:0;}
+.contents_wrap .tab_box ul{display:block; position:relative; width:100%; height: 47px; background-color:#fff; border-bottom:1px solid #d9d9d9; margin:0 0 7px 0; padding:0 10px; box-sizing:border-box;}
+.contents_wrap .tab_box ul li{position:relative; float:left; height:100%; line-height:47px; font-size:15px; color:#383838; font-weight:600; text-align:center; padding:0 3px; box-sizing:border-box;}
+.contents_wrap .tab_box ul .li_01 {width:34%;}
+.contents_wrap .tab_box ul .li_02 {width:38%;}
+.contents_wrap .tab_box ul .li_03 {width:28%;}
+.contents_wrap .tab_box ul .li_04 {width:50%;}
+.contents_wrap .tab_box ul .tab_new{position:relative; display:inline-block; width:auto; height:100%;}
+.contents_wrap .tab_box ul .tab_new .new_img{position:absolute; top:15px; left:-21px;}
+.contents_wrap .tab_box ul .tab_on .tab_bar{width:100%; height:100%; color:#9d65de; border-bottom:3px solid #9977da; box-sizing:border-box; cursor:pointer;}
+.contents_wrap .tab_box ul .tab_on .top_arrow{display:block; position:absolute; top:55px; left:50%; width:13px; height:8px; margin-left:-6px; z-index:10; background:url("http://image.yeoboya.com/imgs/new_wedding/index/img_top.png")center center no-repeat; background-size:13px 8px;}
+.contents_wrap .tab_box ul .tab_on .top_arrow2{display:block; position:absolute; top:55px; left:20%; width:13px; height:8px; margin-left:-6px; z-index:10; background:url("http://image.yeoboya.com/imgs/new_wedding/index/img_top.png")center center no-repeat; background-size:13px 8px;}
+.contents_wrap .tab_box ul .tab_on .tab_txt{display:block; position:absolute; top:49px; width:200%; z-index:10; text-align:left;}
+.contents_wrap .tab_box ul .tab_on .center{margin-left:-50%; text-align:center;}
+.contents_wrap .tab_box ul .tab_on .center2{margin-left:-50%; text-align:left; width: 110%}
+.contents_wrap .tab_box ul .tab_on .tab_txt .txt{display:inline-block; width:auto; height:22px; line-height:22px; text-align:center; font-size:13px; font-weight:400; color:#fff; background-color:#9977da; padding:0 6px; z-index:10;}
+.contents_wrap .tab_box ul .tab_on .right{right:3px; width:267%; text-align:right;}
+.contents_wrap .tab_box ul .tab_txt{display:none;}
+
+@media screen and (max-width:359px) {
+    .contents_wrap .tab_box ul .tab_on .center{text-align:left;}
+    .contents_wrap .tab_box ul .tab_on .center2{width:120%; margin-left:-65%;}
+}
+@media screen and (min-width:450px) {
+    .contents_wrap .tab_box ul .tab_on .center2{text-align:left; margin-left:-21%;}
+    .contents_wrap .tab_box ul .tab_on .top_arrow2{left:20%;}
+}
+@media screen and (min-width:700px) {
+    .contents_wrap .tab_box ul .tab_on .left{width:100%; text-align:center;}
+}
+/*@media screen and (min-width:1000px) {
+    .contents_wrap .tab_box ul .tab_on .left{width:100%; text-align:center;}
+    .contents_wrap .tab_box ul .tab_on .right{width:100%; text-align:center;}
+}*/
+
+/*탭박스_컨텐츠*/
+.contents_wrap .tab_box .tab_box2{display:block; position:relative; width:100%; height:auto; background-color:#fff; padding-top:34px; border-bottom:1px solid #d9d9d9; box-sizing:border-box; margin-bottom:7px;}
+.contents_wrap .tab_box .tab_box2 .list_box{display:block; position:relative; width:100%; height:auto;}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li{padding:10px 12px; border-bottom:1px solid #e2e2e2; box-sizing:border-box; cursor:pointer;}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li:active{background-color:rgba(0,0,0,0.05);}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li:last-of-type{border:none;}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li .woman{color:#d11952;}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li .man{color:#0169ca;} .contents_wrap .tab_box .tab_box2 .list_box .txt_li .top_txt{font-size:14px; font-weight:600;}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li .top_txt span{color:#676767; font-size:14px; font-weight:400; padding-left:2px;}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li .img_reply{background:url("http://image.yeoboya.com/imgs/new_wedding/index/img_reply.png") 3px center no-repeat; background-size:6px 6px; padding-left:15px; font-size:14px; line-height:24px; color:#191919;}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li .notice_txt{font-size:14px; padding-left:14px; background:url("http://image.yeoboya.com/imgs/new_wedding/index/img_bullet.png") left center no-repeat; background-size:6px 6px;}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li .notice_txt .with_yby{color:#01acbb; font-weight:600;}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li .notice_txt .news{color:#5959d7; font-weight:600;}
+.contents_wrap .tab_box .tab_box2 .list_box .txt_li .wd_txt{font-size:14px; padding-left:22px; background:url("http://image.yeoboya.com/imgs/new_wedding/index/img_love.png") left center no-repeat; background-size:15px 12px;}
+.contents_wrap .tab_box .tab_box2 .list_box .top_txt .new_img{vertical-align:top; margin:3px 1px 0 0;}
+.contents_wrap .tab_box .tab_box2 .list_box .notice_txt .new_img{vertical-align:top; margin:4px 1px 0 0;}
+
+/*광고영역*/
+.contents_wrap .ad{display:block; position:relative; width:100%; height:100px; text-align:center; margin-bottom:7px; box-sizing:border-box;}
+.contents_wrap .ad .ad_bg{background:url("http://image.yeoboya.com/imgs/new_wedding/index/ad_bbj_01_bg.png")repeat-x; height:100px; }
+
+/*톡게시판*/
+.contents_wrap .talk_board{display:block; position:relative; width:100%; height:auto; padding-top:0;}
+.contents_wrap .talk_board .mem_tit{padding:10px 4px 6px 6px;}
+.contents_wrap .talk_board .mem_tit span{font-size:14px; font-weight:600; position:relative; top:-1px; padding-left:4px; letter-spacing:-0.5px;}
+.contents_wrap .talk_board .mem_tit .talk_sub{position:relative; top:-1px; font-size:14px; color:#646464; font-weight:400;}
+.contents_wrap .talk_board .board_wrap{display:block; position:relative; width: 100%; padding-top:4px;}
+.contents_wrap .talk_board .board_wrap:after{display:block; clear:both; content:""}
+.contents_wrap .talk_board .board_wrap a img{position:relative; width:97%; height:auto; top:2px;}
+.contents_wrap .talk_board .board_wrap .b_st{width:48%; background-color:#fff; text-align:center; box-shadow: 1px 1px 4px #949494;}
+.contents_wrap .talk_board .board_wrap .b_st a{display:block; width:100%; height:100%;}
+.contents_wrap .talk_board .board_wrap .left_board{float:left;}
+.contents_wrap .talk_board .board_wrap .right_board{float:right;}
+
+@media(min-width:500px) {
+    .contents_wrap .talk_board .board_wrap{width:60%; margin:0 auto;}
+}
+
+/*---------------------- 고객센터 ----------------------*/
+.footer{display:block; width:100%; height:auto; background-color:#efefef;}
+.footer .f_wrap {display:block; position:relative; max-width:360px; margin:0 auto; height:auto; padding:2px 14px 14px; box-sizing:border-box; text-align:center;}
+.footer .f_wrap .f_tit{position:absolute; top:9px; left:14px; width:18%; font-size:14px; font-weight:bold; text-align:left;}
+.footer .f_btn_wrap{position:relative; width:100%; height:auto; padding-left:12%; box-sizing:border-box;}
+.footer .f_btn_wrap:after{content:""; display:block; clear:both;}
+.footer .f_btn_wrap div{ display:inline-block; width:127px; height:36px; border:1px solid #c5c5c5; background-color:#fff; text-align:center; line-height:33px; box-sizing:border-box; font-size:14px;}
+.footer .f_btn_wrap div a{display:block; width:100%; height:100%;}
+.footer .f_btn_wrap div a:active{background-color:rgba(0,0,0,0.02);}
+.footer .f_btn_wrap .btn_num{}
+.footer .f_btn_wrap .btn_num .icon_call{padding-right:3px; position:relative; top:3px}
+.footer .f_btn_wrap .btn_inqu{}
+.footer .f_btn_wrap .btn_inqu .icon_inqu{padding-right:3px; position:relative; top:4px;}
+
+@media(max-width: 359px) {
+    .footer .f_btn_wrap div{width:112px;}
+}
+
+/* ... 한줄표기 */
+.ellipsis { overflow: hidden;white-space: nowrap;text-overflow: ellipsis; }
+
+/* 관리자에서 공지사항 타이틀에 들어가는 class 반영 */
+.notice_txt span.green { color: #00a000; }
+.notice_txt span.blue { color: #0000ff; }
+.notice_txt span.red { color: #e5032c; }
+.notice_txt span.navy { color: #236798; }
+.notice_txt span.purple { color: #993399; }
+.notice_txt span.line { text-decoration: underline; }
+.notice_txt span.bold { font-weight: bold; }
+
+/*---------------------- 애니메이션 효과 ----------------------*/
+@keyframes push {
+	50% { transform:scale(0.9); }
+	100% { transform:scale(1); }
+}
+@-webkit-keyframes push {
+	50% { -webkit-transform:scale(0.9); }
+	100% { -webkit-transform:scale(1); }
+}
+@-ms-keyframes push {
+	50% { -ms-transform:scale(0.9); }
+	100% { -ms-transform:scale(1); }
+}
+@-moz-keyframes push {
+	50% { -moz-transform:scale(0.9); }
+	100% { -moz-transform:scale(1); }
+}
+@-o-keyframes push {
+	50% { -o-transform:scale(0.9); }
+	100% { -o-transform:scale(1); }
+}
+.menu_wrap .btn_st .active{animation:push 0.1s ease-in-out 1;-webkit-animation:push 0.1s ease-in-out 1;-ms-animation:push 0.1s ease-in-out 1;-moz-animation:push 0.1s ease-in-out 1;-o-animation:push 0.1s ease-in-out 1;}
+
+/*로고애니*/
+.logo_wrap{position:relative; top:20px; width:117px; height:60px; margin:0 auto;}
+.logo_wrap .logo_1,.logo_wrap .logo_2,.logo_wrap .logo_3{position:absolute; top:27px;}
+.logo_wrap .logo_1{left:2px;}
+.logo_wrap .logo_2{left:39px;}
+.logo_wrap .logo_3{left:78px;}
+@keyframes logoSpin {
+    0%{top:27px;}
+    60%{top:32px;}
+    100%{top:27px;}
+}
+.logo_on .logo_1{animation:logoSpin 0.3s ease-out;}
+.logo_on .logo_2{animation:logoSpin 0.3s ease-out 0.1s;}
+.logo_on .logo_3{animation:logoSpin 0.3s ease-out 0.2s;}
